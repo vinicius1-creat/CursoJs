@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deals</title>
+    <style>
+        body {
+            font-family: Arial, sans-sarif;
+            background-color: #fff;
+            color: 000;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .deals {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 2px solid #000;
+            padding: 20px;
+        }
+        .deals h2 {
+            margin-top: 0;
+            color: #e60000;
+        }
+        .deal-item {
+            border-bottom: 1px dashed #ccc;
+            padding: 15px 0;
+        }
+        .deal-item button {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #e60000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            background-color: #f9f9f9;
+            border-left: 3px solid #e60000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DEALS</h1>
+    </header>
+    <div>
+        <div>
+            <h2>BUNLIMITED SUNDAYS</h2>
+            <P>90 MINUTES OF UNLIMITED BURGERS PLUS 1 SIDE FOR $25 PER PERSON.</P>
+            <strong>BURGERS:</strong>
+            <p>DEAD HIPPIE, DIRTY CHICKEN, TEMPEH TANTRUM (PB)</p>
+            <strong>SIDES:</strong>
+            <p>SAT & PEPPERED FRIES, NASHVILLE FRIES (PB), SLAW (PB)</p>
+            <button onclick="toggleDetails(this)">Ver detalhes</button>
+            <div class="details">
+                <p>Desfrute de 90 minutos com hambúrgueres ilimitados.Vários sabores e acompanhamentos, perteitos para um domingo divertido</p>
+            </div>
+        </div>
+        <div>
+        <div class="deal-item">
+            <h2>AUSTERITY MEASURE</h2>
+            <P>CAN OF CARLSBERG & A SHOT OF FEW BOURBON $6.75
+            <button class="toggleDetails(this)">Ver Detalhes</button>
+            <div>
+                <p>Uma combinação perfeita: uma lata de Carlsberg e um shot de bourbon. Simples e sofisticado.</p>
+            </div>
+            </div>
+            <div class="deal-item">
+                <h2>TRIPLE CHILI CHALLENGE</h2>
+                <p>EAT IN UNDER 10 MINUTES & IT'S FREE!</p>
+                <strong>MEAT:</strong>
+                <p>GREE CHILLI CHEESEBURGER, CHILLI DOG, CHILI CHEESE FRIES</p>
+                <strong>PLANT-BASED:</strong>
+                <p>BURGALO 2, BLACK BEAN CHILI DOG, BLACK BEAN CHILI CHEESE FRISE</p>
+                <button onclick="toggleDetails(this)">Ver Detalhes</button>
+                <div class="details">
+                    <p>Desafie-se com o Triple Chili Challenge: se você terminar em menos 10 minutos, o prato é grátis!</p>
+                </div>
+            </div>
+            <div class="deal-item">
+                <h2>50p WINGS & IMPOSSIBLE NUGGERS</h2>
+                <p>EVERY MONDAY, ALL DAY. KATSU, BBQ, GARLICKY BUFFALO, LEMON DUSTED</p>
+                <button onclick="toggleDetails(this)">Ver Detalhes</button>
+                <p>Desfrute de asas de frango ou nuggets Impossible por apenas 50p cada. Esperimente todos os sabores</p>
+            </div>
+            </div>
+    </div>
+    <script>
+        function toggleDetails(button) {
+            const details = button.nextElementSibling;
+            if (details.style.display === "block") {
+                details.style.display = "none";
+            } else {
+                details.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
