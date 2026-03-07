@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto 79 - Extreme Conditions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+
+        <!-- LADO ESQUERDO -->
+         <div class="left">
+
+            <h1>Texto 79. Extreme Conditions</h1>
+
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+            </au class="english"dio><div>
+
+            </div>
+
+            <div class="text-area">
+                
+                <div class="english">
+                    <h3>Extreme Conditions</h3>
+                    <p>Today I was watching a very interesting documentary on TV.It was about scientists in the Arctic.They are geologists and meteorologists.These people monitor climate change.They live in extreme conditions.The weather in the Arctic is severe and it changes very fast.It can change from being a still and sunny day to a snowstorm with gale-force, howling wind.But fighting the cold weather is not the only problem they have there.These brave people must be very careful because there are polar bears everywhere.The documentary said the polar bears are the most dangerous animals in the World.They are not afraid of humans and dogs.</p>
+                </div>
+
+                <div class="portuguese">
+                    <h3>Condições Extremas</h3>
+                    <p>Hoje eu estava assistindo a um documentário muito interessante na TV.Tratava-se de cientistas no Ártico.Eles são geólogos e meteorologistas.Essas pessoas monitoram as mudanças climáticas.Eles vivem em condições extremas.O tempo no Ártico é severo e muda muito rápido.Pode mudar de ser um dia imóvel e ensolarado a uma tempestade de neve com um vendaval forte, vento uivando.Mas lutar contra o frio não é o único problema que eles têm lá.Essas pessoas corajosas devem ter muito cuidado porque há ursos polares em todos os lugares.O documentário disse que os ursos polares são os animais mais perigosos do mundo.Eles não têm medo de humanos e cães.</p>
+                </div>
+
+            </div>
+
+         </div>
+
+         <!-- LADO DIREITO-->
+          <div class="right">
+
+            <h2>Note Content</h2>
+
+            <textarea id="note" placeholder="Excreva suas anotações aqui..."></textarea>
+            <button onclick="salverNota ()">Salvar</button>
+
+          </div>
+    </div>
+
+    <script src="script.js">
+        function salvarNota() {
+            let texto = document.getElementById("note").value;
+            localStorage.setItem("minhaNota", texto);
+            alert("Nota salva!");      
+          }
+
+          window.onload = function(){
+            let notaSalva = localStorage.getItem("minhaNota");
+            if(notaSalva){
+                doncument.getElementById("note").value = notaSalva;
+            }
+          }
+    </script>
+</body>
+</html>
