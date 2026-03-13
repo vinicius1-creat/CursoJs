@@ -10,3 +10,7 @@ items.forEach(item => {
     })
 
 })
+
+document.querySelector(".icon").addEventListener("mouseover", () => {
+    alert("Fire Safety Information");
+});
