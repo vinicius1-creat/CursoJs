@@ -1,0 +1,76 @@
+/* styles.css */
+:root {
+    --verde-fundo: #00b894;
+    --amarelo-lateral: #fdcb6e;
+    --preto-caixa: #222f3e;
+    --branco-caixa: #ffffff;
+    --fonte: system-ui, -appple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--fonte);
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+}
+
+.topo {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1.5rem 1rem 0.5rem;
+    color: #fff;
+}
+
+.topo h1 {
+    font-size: 1.8rem;
+}
+
+/* "Placa" principal */
+.cardapio {
+    max-width: 420px;
+    margin: 0 auto;
+    background: linear-gradient(
+        to right,
+        var(--laranja-topo),
+        var(--amarelo-lateral),
+        var(--verde-fundo)
+        );
+    padding: 1.5rem 1rem 1.5rem 0.75rem;
+    border-radius: 6px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Cada sabor como "faixa" */
+.sabor {
+    position: relative;
+    background: var(--branco-caixa);
+    margin: 0.35rem 0.35rem 1.5rem;
+    padding: 0.6rem 0.9remf;
+    border-radius: 2px;
+    box-shadow: 6px 6px 0 var(--preto-caixa);
+}
+
+.sabor h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1.15rem;
+}
+
+.sabor p {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #555;
+}
